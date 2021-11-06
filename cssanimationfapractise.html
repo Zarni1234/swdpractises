@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fa practise</title>
+    <style>
+      .box {
+        background-image: url(location.png);
+        width: 600px;
+        height: 500px;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+      .boy {
+        width: 100px;
+        animation: boy 6s;
+      }
+      .girl {
+        width: 100px;
+        animation: girl 6s;
+      }
+      .lu {
+        /* transform: translate(200px, 300px); */
+        position: absolute;
+        top: 290px;
+        left: 200px;
+      }
+      .knife {
+        width: 100px;
+        position: absolute;
+        top: 290px;
+        left: 240px;
+        animation: knifeanimation 5s;
+      }
+      .fa {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: falay 7s;
+      }
+      .faphoto {
+        width: 100px;
+      }
+      @keyframes knifeanimation {
+        0% {
+          transform: translateY(550px);
+        }
+        10% {
+          transform: translateY(500px) rotate(0deg);
+        }
+        20% {
+          transform: translateY(290px) rotate(60deg);
+        }
+        30% {
+          transform: rotate(0deg);
+        }
+        40% {
+          transform: rotate(60deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        60% {
+          transform: rotate(60deg);
+        }
+        70% {
+          transform: rotate(0deg);
+        }
+        80% {
+          transform: rotate(60deg);
+        }
+        90% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(60deg);
+        }
+      }
+      @keyframes boy {
+        0% {
+          transform: translateX(-500px);
+        }
+        30% {
+          transform: translateX(0px);
+        }
+        80% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(-500px);
+        }
+      }
+      @keyframes girl {
+        0% {
+          transform: translateX(500px);
+        }
+        30% {
+          transform: translateX(0px);
+        }
+        80% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(500px);
+        }
+      }
+      @keyframes falay {
+        0% {
+          top: 550px;
+        }
+        80% {
+          top: 550px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="lu">
+        <img src="boy.png" alt="boy" class="boy" />
+        <img src="girl.png" alt="girl" class="girl" />
+      </div>
+      <div class="knifediv">
+        <img src="knife.png" alt="knife" class="knife" />
+      </div>
+      <div class="fa">
+        <img src="fa.png" alt="fa" class="faphoto" />
+        <p>FA is the best...</p>
+      </div>
+    </div>
+  </body>
+</html>
